@@ -62,6 +62,6 @@ window.addEventListener("DOMContentLoaded", () => {
   document.getElementById("twitter").addEventListener("click", tweet);
 
   const input = document.getElementById("seed-text");
-  input.innerText = localStorage.getItem(STORAGE_KEY) || "";
+  input.value = localStorage.getItem(STORAGE_KEY) || "";
   input.placeholder = getInitialSeedText();
 });
