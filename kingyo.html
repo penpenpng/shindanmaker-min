@@ -1,0 +1,36 @@
+<html>
+  <head>
+    <script src="./xorshift.js"></script>
+    <script src="./data.js"></script>
+    <script src="./script.js"></script>
+    <meta property="og:title" content="きんぎょの鳴き声" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="./ogimage.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="きんぎょの鳴き声" />
+    <meta name="twitter:image" value="./ogimage.jpg" />
+    <style>
+      #result {
+        margin-bottom: 10px;
+        padding: 20px;
+        border: solid 1px;
+      }
+
+      hr {
+        margin: 20px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>きんぎょの鳴き声</h1>
+    <p>診断結果は<span id="total"></span>通り, 日替わり</p>
+
+    <label for="seed-text">診断したい名前を入れてください:</label>
+    <input id="seed-text" type="text" />
+    <button id="submit">診断する</button>
+    <hr />
+    <div>結果:</div>
+    <div id="result"></div>
+    <button id="twitter">Tweet</button>
+  </body>
+</html>
