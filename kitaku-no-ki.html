@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script src="./xorshift.js"></script>
+    <script src="./data/kitaku-no-ki.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <meta property="og:title" content="帰宅の木" />
+    <meta property="og:description" content="帰宅の森をつくろう" />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://penpenpng.github.io/shindanmaker-min/ogimage/kitaku-no-ki.jpg" />
+    <meta property="og:url" content="https://penpenpng.github.io/shindanmaker-min/kitaku-no-ki.html" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="帰宅の木" />
+    <meta name="twitter:description" content="帰宅の森をつくろう" />
+    <meta name="twitter:image" content="https://penpenpng.github.io/shindanmaker-min/ogimage/kitaku-no-ki.jpg" />
+    <meta name="twitter:url" content="https://penpenpng.github.io/shindanmaker-min/kitaku-no-ki.html" />
+  </head>
+  <body>
+    <h1>帰宅の木</h1>
+    <p>診断結果は<span id="total"></span>通り, 日替わり</p>
+
+    <label for="seed-text">診断したい名前を入れてください:</label>
+    <input id="seed-text" type="text" />
+    <button id="submit">診断する</button>
+    <hr />
+    <div>結果:</div>
+    <div id="result"></div>
+    <button id="twitter" disabled>Tweet</button>
+  </body>
+</html>
