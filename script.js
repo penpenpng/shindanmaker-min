@@ -40,6 +40,7 @@ async function process() {
   const seedText = input.value || input.placeholder;
 
   document.getElementById("result").innerText = await gacha(seedText);
+  document.getElementById("twitter").removeAttribute("disabled");
 
   if (input.value) {
     localStorage.setItem(STORAGE_KEY, input.value);
