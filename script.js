@@ -39,7 +39,7 @@ async function process() {
   const input = document.getElementById("seed-text");
   const seedText = input.value || input.placeholder;
 
-  document.getElementById("result").innerText = gacha(seedText);
+  document.getElementById("result").innerText = await gacha(seedText);
 
   if (input.value) {
     localStorage.setItem(STORAGE_KEY, input.value);
